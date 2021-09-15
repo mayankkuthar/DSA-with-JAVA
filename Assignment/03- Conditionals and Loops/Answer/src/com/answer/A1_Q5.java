@@ -12,6 +12,6 @@ public class A1_Q5 {
         System.out.print("Enter Base of Parallelogram : ");
         b=input.nextDouble();
         double area = (b*h);
-        System.out.println("Area of Triangle : "+area+" unit²");
+        System.out.println("Area of parallelogram : "+area+" unit²");
     }
 }
