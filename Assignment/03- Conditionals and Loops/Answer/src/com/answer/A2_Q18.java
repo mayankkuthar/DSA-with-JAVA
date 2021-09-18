@@ -2,7 +2,7 @@ package com.answer;
 
 import java.util.Scanner;
 
-// Find if a string is a palindrome or not
+// Find if a number is a palindrome or not
 public class A2_Q18 {
     public static void main(String[] args) {
         Scanner  input = new Scanner(System.in);
