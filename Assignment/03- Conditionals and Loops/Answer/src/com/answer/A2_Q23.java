@@ -6,27 +6,19 @@ import java.util.Scanner;
 public class A2_Q23 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter the number : ");
+        System.out.println("enter your number : ");
         int n = input.nextInt();
-        long sum = 0;
-        for(int i=1;i<=Math.sqrt(n);i++){
-            if(n%i==0){
-                System.out.println(i+" "+(n/i));
-                if(n/i==i){
-                    if(i==n) continue;
-                    else sum+=i;
-                }
-                else{
-                    if(i==n) continue;
-                    else sum+=i;
-                    if(n/i==n) continue;
-                    else sum+=(n/i);
-                }
+        int temp = n;
+        int sum = 0;
+        for (int i = 1; i < n ; i ++){
+            if (n%i == 0){
+                sum = sum + i;
             }
         }
-        if(n==sum)
-            System.out.println(n+" is a Perfect number");
-        else
-            System.out.println(n+" is not a Perfect number");
+        if (sum == temp){
+            System.out.println("It is a perfect number! ");
+        }else {
+            System.out.println("It is not a perfect number!");
+        }
     }
 }
